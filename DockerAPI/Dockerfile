@@ -12,7 +12,7 @@ RUN dotnet publish -c Release -o out
 
 
 #Generate runtime image
-From mcr.microsfot.com/dotnet/core/aspnet:2.2
+From mcr.microsoft.com/dotnet/core/aspnet:2.2
 WORKDIR /app
 EXPOSE 80
 COPY --from=build-env /app/out .
